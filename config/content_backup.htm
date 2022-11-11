@@ -280,7 +280,18 @@ doc["aitetris"].bind("click", aitetris.do)
 <div style="width: 100%; height: 100%;"></div>
 <div style="width: 100%; height: 100%;"></div>
 <h1 style="width: 100%; height: 100%;">w1</h1>
+<p></p>
+<p></p>
+<p></p>
+<h1>Problem</h1>
+<h3>遇到的問題</h3>
+<p>ssh: connect to host github.com port 22: Network is unreachable<br/>fatal: Could not read from remote repository.<br/><br/>Please make sure you have the correct access rights</p>
+<h3>解決方法</h3>
+<p>發現confing 沒有改</p>
+<p>原本的</p>
+<p>Host demo<br/>User github<br/>Hostname github.com<br/>ProxyCommand /usr/bin/ncat --proxy p42.cycu.org:3128 --proxy-type http %h %p</p>
 <p><!-- Brython 程式執行的結果, 都以 brython_div1 作為切入位置 --></p>
-<div id="brython_div2"></div>
+<div id="brython_div2">更改後</div>
+<div>Host github.com <br/>User github.com<br/>Hostname github.com<br/>ProxyCommand /usr/bin/ncat --proxy p42.cycu.org:3128 --proxy-type http %h %p</div>
 <div></div>
 <!-- editor2 結束 --><hr/>
